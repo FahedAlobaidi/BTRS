@@ -1,0 +1,53 @@
+﻿@model BTRS.Models.Passenger
+
+<form method="post">
+	<table>
+
+		<tr>
+			<td>@Html.LabelFor(m=>m.Name)</td>
+			<td><input type="text" asp-for="Name" class="form-control" /></td>
+			<td><span asp-validation-for="Name"></span></td>
+		</tr>
+
+
+		<tr>
+			<td>@Html.LabelFor(m=>m.Username)</td>
+			<td><input type="text" asp-for="Username" class="form-control" /></td>
+			<td><span asp-validation-for="Username"></span></td>
+		</tr>
+
+		<tr>
+			<td>@Html.LabelFor(m=>m.PhoneNumber)</td>
+			<td><input type="number" asp-for="PhoneNumber" class="form-control" /></td>
+			<td><span asp-validation-for="PhoneNumber"></span></td>
+		</tr>
+
+		<tr>
+			<td>@Html.LabelFor(m=>m.Gender)</td>
+			<td>
+				<select class="form-select" asp-for="Gender" asp-items="@Html.GetEnumSelectList<Gender>()" class="custom-select"> </select>
+			</td>
+		</tr>
+
+		<tr>
+			<td>@Html.LabelFor(m=>m.Email)</td>
+			<td><input type="email" asp-for="Email" class="form-control" /></td>
+			<td><span asp-validation-for="Email"></span></td>
+		</tr>
+
+		<tr>
+			<td>@Html.LabelFor(m=>m.Password)</td>
+			<td><input type="password" asp-for="Password" class="form-control" /></td>
+			<td><span asp-validation-for="Password"></span></td>
+		</tr>
+		<tr>
+		</tr>
+
+		@TempData["Msg"]
+
+	</table>
+	<input type="submit" value="Login In" class="btn btn-primary" />
+	
+</form>
+
+

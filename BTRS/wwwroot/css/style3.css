@@ -1,0 +1,195 @@
+body {
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    place-items: center;
+    overflow: hidden;
+    position: relative;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.container {
+    border: #274293;
+    position: absolute;
+    top: 18%;
+    left: 47%;
+    transform: translate(-50%, -1%);
+    width: 420px;
+    padding: 0 15px;
+    margin: auto;
+    
+}
+
+
+
+/*---------------------------------------
+  HEADER              
+-----------------------------------------*/
+h1 {
+    margin: auto;
+    margin-bottom: 50px;
+    margin-left: 170px;
+    color: #000000;
+    font-size: larger;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: normal;
+}
+
+/*---------------------------------------
+  ICONS              
+-----------------------------------------*/
+
+i{
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+/*---------------------------------------
+  INPUT & LABEL              
+-----------------------------------------*/
+
+.txt_field{
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+label{
+    position: absolute;
+    color: #717275;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items:center;
+    padding-left: 1em;
+    transition: .3s ease-in-out;
+}
+
+input{
+    border-radius: 0.5em;
+    border: 1px solid #959595;
+    padding-left: 1em;
+    outline: none;
+    transition: .5s ease-in-out;
+}
+
+input,label{
+    font-size: 1em;
+    width: 130%;
+    height: 55px;
+}
+
+input:focus + label,
+input:valid + label{
+    color: #717275;
+    font-size: .85em;
+    top: -15px;
+    pointer-events: none;
+    border-color: #FF4400;
+}
+
+input:hover{
+    border-color: #FF4400;
+}
+
+p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    
+}
+
+.text_center2 {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text_wraper {
+    width: 100%;
+    margin-left: 7em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*---------------------------------------
+  CUSTOM BUTTON               
+-----------------------------------------*/
+
+.create_btn {
+    
+    border-radius: 0.5em;
+    border: 1px solid #959595;
+    padding: 13.5px 20px;
+    outline: none;
+    transition: .5s ease-in-out;
+    width: 130%;
+    height: 55px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 2em;
+    font-family: 'Inter', sans-serif;
+    font-size: large;
+}
+
+.create_btn:hover{
+    background-color: #FF4400;
+    border-color: #FF4400;
+    color: #FFFFFF;
+}
+
+
+
+
+/*---------------------------------------
+  LINKS               
+-----------------------------------------*/
+
+.signIn_link{
+    color: #000000;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+}
+
+.signIn_link:hover{
+    color: #FF4400;
+}
+
+
+.social_btn_div{
+    padding-left: 25px;
+    padding-bottom: 60px;
+}
+
+
+
+.social_btn a{
+    font-size: smaller;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    width: 460px;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 25px 15px 25px 25px;
+    border-radius: 2em;
+    border: 1px solid #000000;
+    font-size: large;
+    color: #FF4400;
+    margin-bottom: 30px;
+    margin-right:30px;
+}
+
+.social_btn a:hover{
+    background-color: #FF4400;
+    color: #FFFFFF;
+    transition: .5s ease-in-out;
+    border: none;
+}
+
+
+

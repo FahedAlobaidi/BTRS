@@ -1,0 +1,26 @@
+﻿@model BTRS.Models.Login;
+
+<form method="post">
+	<table>
+		<tr>
+			<td>username</td>
+			<td>
+				<input asp-for="userName" type="text" class="form-control"/>
+			</td>
+			<td><span asp-validation-for="userName"></span></td>
+		</tr>
+		<tr>
+			<td>password</td>
+			<td>
+				<input asp-for="password" type="password" class="form-control" />
+			</td>
+			<td><span asp-validation-for="password"></span></td>
+		</tr>
+	</table>
+
+	<input type="submit" value="Log In" class="btn btn-primary"/>
+</form>
+
+<a asp-action="Signup" asp-controller="Passenger" class="btn btn-link">Sign Up </a>
+
+@TempData["msg"]
